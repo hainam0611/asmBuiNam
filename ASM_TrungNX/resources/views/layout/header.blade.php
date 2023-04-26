@@ -16,10 +16,6 @@
 
 </head>
 
-@php
-    $CartController = new App\Http\Controllers\CartController();
-    $cartItemCount = $CartController->count();
-@endphp
 
 <header class="section-header">
     <nav class="navbar navbar-dark navbar-expand p-0 bg-primary">
@@ -56,7 +52,6 @@
                         <div class="widget-header  mr-3">
                             <a href="{{ route('products.cart') }}" class="icon icon-sm rounded-circle border"><i
                                     class="fa fa-shopping-cart" style="padding-top:10px"></i></a>
-                            <span class="badge badge-pill badge-danger notify">{{ $cartItemCount }}</span>
 
                         </div>
                     </div> <!-- widgets-wrap.// -->
